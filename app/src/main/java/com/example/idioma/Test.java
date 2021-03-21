@@ -92,36 +92,46 @@ public class Test extends AppCompatActivity {
 
             }
         });
-        //Solucion temporal
+
         //Comprobar la solucion
         btnTerminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Correccion 1
-                Toast.makeText(Test.this, "La palabra del primer campo es " + quest1.getText()
-                                + " y su solucion es " + res1 + " y usted puso> " + respues1.getText(),
+                int nota = 0;
+                String respu1 = res1.toString();
+                String respu2 = res2.toString();
+                String respu3 = res3.toString();
+                String respu4 = res4.toString();
+                String respu5 = res5.toString();
+                //sumas
+                if (respu1.equals(respues1.getText().toString())) {
+                    nota = nota + 1;
+                }
+                if (respu2.equals(respues2.getText().toString())) {
+                    nota = nota + 1;
+                }
+                if (respu3.equals(respues3.getText().toString())) {
+                    nota = nota + 1;
+                }
+                if (respu4.equals(respues4.getText().toString())) {
+                    nota = nota + 1;
+                }
+                if (respu5.equals(respues5.getText().toString())) {
+                    nota = nota + 1;
+                }
+
+                Toast.makeText(Test.this, "La nota final es: " + nota+"/5",
                         Toast.LENGTH_SHORT).show();
-                //Correccion 2
-                Toast.makeText(Test.this, "La palabra del primer campo es " + quest2.getText()
-                                + " y su solucion es " + res2 + " y usted puso> " + respues2.getText(),
-                        Toast.LENGTH_SHORT).show();
-                //Correccion 3
-                Toast.makeText(Test.this, "La palabra del primer campo es " + quest3.getText()
-                                + " y su solucion es " + res3 + " y usted puso> " + respues3.getText(),
-                        Toast.LENGTH_SHORT).show();
-                //Correccion 4
-                Toast.makeText(Test.this, "La palabra del primer campo es " + quest4.getText()
-                                + " y su solucion es " + res4 + " y usted puso> " + respues4.getText(),
-                        Toast.LENGTH_SHORT).show();
-                //Correccion 5
-                Toast.makeText(Test.this, "La palabra del primer campo es " + quest5.getText()
-                                + " y su solucion es " + res5 + " y usted puso> " + respues5.getText(),
-                        Toast.LENGTH_SHORT).show();
+
             }
         });
 
     }
 
+    /* Toast.makeText(Test.this, "La palabra del primer campo es " + quest5.getText()
+               + " y su solucion es " + res5 + " y usted puso> " + respues5.getText(),
+       Toast.LENGTH_SHORT).show();
+      */
     // Consulta idiomas
     class BuscarPalabra extends AsyncTask<Void, Void, String> {
         // Atributos
