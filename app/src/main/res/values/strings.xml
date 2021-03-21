@@ -9,4 +9,10 @@
     <string name="Titulo">TEST</string>
     <string name="btnComenzar">Comenzar</string>
     <string name="btnTerminar">Comprobar</string>
+    //campos palabras
+    <string name="palabra1">Palabra 1</string>
+    <string name="palabra2">Palabra 2</string>
+    <string name="palabra3">Palabra 3</string>
+    <string name="palabra4">Palabra 4</string>
+    <string name="palabra5">Palabra 5</string>
 </resources>
