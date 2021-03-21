@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Idioma</string>
+    //ventana palabras
+    <string name="btnVolver">VOLVER</string>
+    <string name="btnTest">TEST</string>
+    //ventana test
+    <string name="btnVolverT">VOLVER</string>
+    <string name="btncomprobar">COMRPOBAR</string>
+    <string name="Titulo">TEST</string>
+    <string name="btnComenzar">Comenzar</string>
+    <string name="btnTerminar">Comprobar</string>
+</resources>
